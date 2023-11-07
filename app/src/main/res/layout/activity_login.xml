@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Converter"
+        android:textAlignment="center"
+        android:textColor="#2B2424"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_edittext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите логин"
+        android:background="@drawable/edittext_design"
+        android:inputType="text"
+        android:paddingStart="25dp"
+        android:textColor="#2B2424"
+        android:textColorHint="#2B2424"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/password_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_design"
+        android:hint="Введите пароль"
+        android:textColor="#2B2424"
+        android:textColorHint="#2B2424"
+        android:inputType="textPassword"
+        android:paddingStart="25dp"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_design"
+        android:text="Войти"
+        android:textColor="#2B2424"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/registr_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <Button
+        android:id="@+id/registr_button"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="Зарегестрироваться"
+        android:textColor="#2B2424"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/button_design"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

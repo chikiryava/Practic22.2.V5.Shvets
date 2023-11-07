@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние фокуса - измените цвет фона при фокусе -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#66FFFFFF"/> <!-- Цвет фона в состоянии фокуса -->
+            <corners android:radius="2dp"/>
+            <stroke android:width="2dp"
+                android:color="@color/black"/><!-- Закругленные углы -->
+        </shape>
+    </item>
+
+    <!-- Обычное состояние - цвет фона по умолчанию -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#40FFFFFF"/> <!-- Цвет фона в обычном состоянии -->
+            <corners android:radius="2dp"/>
+            <stroke android:width="2dp"
+                android:color="@color/black"/>
+        </shape>
+    </item>
+</selector>
